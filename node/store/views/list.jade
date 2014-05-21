@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1.
+        Product List
+    ul
+        each prod, i in list
+            li
+                a(href="http://localhost:3000/details/"+prod.item)= prod.item

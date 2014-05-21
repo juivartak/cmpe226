@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1.
+        Brands
+    ul
+        each item, i in details
+            li
+                a(href="http://localhost:3000/tvlist/"+item.name)= item.name	

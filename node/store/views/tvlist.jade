@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1.
+        Product information
+    ul
+        each item, i in tvlist
+            li=JSON.stringify(item)

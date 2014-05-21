@@ -1,0 +1,8 @@
+h1 Search 
+ form(id="searchCriteria", method="get")
+  span(class="errors")
+  fieldset
+   div
+    label(for="searchString") Search String:
+    input(id="searchString",name="searchString",type="text",value="")
+    a(href="http://localhost:3000/result?"+value) Search

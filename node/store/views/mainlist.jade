@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1.
+        Product Categories
+    ul
+        each item, i in mainlist
+            li
+                a(href="http://localhost:3000/list/"+item.categoryname)= item.categoryname
